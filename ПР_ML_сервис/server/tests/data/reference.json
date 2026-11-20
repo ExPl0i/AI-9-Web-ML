@@ -1,0 +1,395 @@
+{
+ "sklearn_version": "1.9.1",
+ "examples": [
+  {
+   "features": {
+    "speed": 44.8,
+    "vib_front": 0.358,
+    "vib_rear": 0.367,
+    "vib_hf": 0.339,
+    "slip": 2.12,
+    "air_temp": 20.4,
+    "road_temp": 29.9,
+    "humidity": 63,
+    "lidar_intensity": 0.515,
+    "camera_brightness": 131,
+    "cabin_noise": 62.3,
+    "wipers": "выкл",
+    "time_of_day": "день",
+    "tires": "летние"
+   },
+   "label": "сухой асфальт",
+   "expected": {
+    "logreg-1.0": {
+     "class": "сухой асфальт",
+     "probabilities": {
+      "грунт": 0.011159,
+      "мокрый асфальт": 0.001684,
+      "снег и лед": 2e-06,
+      "сухой асфальт": 0.987155
+     }
+    },
+    "logreg-1.1-snow5": {
+     "class": "сухой асфальт",
+     "probabilities": {
+      "грунт": 0.01294,
+      "мокрый асфальт": 0.001281,
+      "снег и лед": 3e-06,
+      "сухой асфальт": 0.985776
+     }
+    }
+   }
+  },
+  {
+   "features": {
+    "speed": 81.9,
+    "vib_front": 0.322,
+    "vib_rear": 0.298,
+    "vib_hf": 0.084,
+    "slip": 2.22,
+    "air_temp": 8.1,
+    "road_temp": 10.8,
+    "humidity": 31,
+    "lidar_intensity": 0.444,
+    "camera_brightness": 28,
+    "cabin_noise": 67.7,
+    "wipers": "выкл",
+    "time_of_day": "ночь",
+    "tires": "летние"
+   },
+   "label": "сухой асфальт",
+   "expected": {
+    "logreg-1.0": {
+     "class": "сухой асфальт",
+     "probabilities": {
+      "грунт": 0.000158,
+      "мокрый асфальт": 0.005554,
+      "снег и лед": 2e-06,
+      "сухой асфальт": 0.994287
+     }
+    },
+    "logreg-1.1-snow5": {
+     "class": "сухой асфальт",
+     "probabilities": {
+      "грунт": 0.000115,
+      "мокрый асфальт": 0.004498,
+      "снег и лед": 1e-06,
+      "сухой асфальт": 0.995385
+     }
+    }
+   }
+  },
+  {
+   "features": {
+    "speed": 67,
+    "vib_front": 0.509,
+    "vib_rear": 0.457,
+    "vib_hf": 0.12,
+    "slip": 0.98,
+    "air_temp": 31.3,
+    "road_temp": 32.9,
+    "humidity": 82,
+    "lidar_intensity": 0.44,
+    "camera_brightness": 152,
+    "cabin_noise": 60.7,
+    "wipers": "выкл",
+    "time_of_day": "день",
+    "tires": "летние"
+   },
+   "label": "сухой асфальт",
+   "expected": {
+    "logreg-1.0": {
+     "class": "сухой асфальт",
+     "probabilities": {
+      "грунт": 1.8e-05,
+      "мокрый асфальт": 0.000846,
+      "снег и лед": 0.0,
+      "сухой асфальт": 0.999137
+     }
+    },
+    "logreg-1.1-snow5": {
+     "class": "сухой асфальт",
+     "probabilities": {
+      "грунт": 1.3e-05,
+      "мокрый асфальт": 0.000613,
+      "снег и лед": 0.0,
+      "сухой асфальт": 0.999373
+     }
+    }
+   }
+  },
+  {
+   "features": {
+    "speed": 50.5,
+    "vib_front": 0.65,
+    "vib_rear": 0.522,
+    "vib_hf": 0.316,
+    "slip": 2.35,
+    "air_temp": 4.7,
+    "road_temp": 6.2,
+    "humidity": 65,
+    "lidar_intensity": 0.416,
+    "camera_brightness": 87,
+    "cabin_noise": 62.4,
+    "wipers": "выкл",
+    "time_of_day": "сумерки",
+    "tires": "зимние"
+   },
+   "label": "мокрый асфальт",
+   "expected": {
+    "logreg-1.0": {
+     "class": "мокрый асфальт",
+     "probabilities": {
+      "грунт": 0.231685,
+      "мокрый асфальт": 0.481699,
+      "снег и лед": 0.096903,
+      "сухой асфальт": 0.189713
+     }
+    },
+    "logreg-1.1-snow5": {
+     "class": "снег и лед",
+     "probabilities": {
+      "грунт": 0.148826,
+      "мокрый асфальт": 0.328601,
+      "снег и лед": 0.362215,
+      "сухой асфальт": 0.160357
+     }
+    }
+   }
+  },
+  {
+   "features": {
+    "speed": 48.7,
+    "vib_front": 0.482,
+    "vib_rear": 0.464,
+    "vib_hf": 0.407,
+    "slip": 1.91,
+    "air_temp": 0,
+    "road_temp": -0.3,
+    "humidity": 57,
+    "lidar_intensity": 0.413,
+    "camera_brightness": 168,
+    "cabin_noise": 69.1,
+    "wipers": "выкл",
+    "time_of_day": "день",
+    "tires": "зимние"
+   },
+   "label": "мокрый асфальт",
+   "expected": {
+    "logreg-1.0": {
+     "class": "грунт",
+     "probabilities": {
+      "грунт": 0.819195,
+      "мокрый асфальт": 0.145203,
+      "снег и лед": 0.006031,
+      "сухой асфальт": 0.029572
+     }
+    },
+    "logreg-1.1-snow5": {
+     "class": "грунт",
+     "probabilities": {
+      "грунт": 0.763727,
+      "мокрый асфальт": 0.177084,
+      "снег и лед": 0.023492,
+      "сухой асфальт": 0.035698
+     }
+    }
+   }
+  },
+  {
+   "features": {
+    "speed": 60.2,
+    "vib_front": 0.663,
+    "vib_rear": 0.582,
+    "vib_hf": 0.287,
+    "slip": 4.18,
+    "air_temp": 13.4,
+    "road_temp": 15.1,
+    "humidity": 78,
+    "lidar_intensity": 0.446,
+    "camera_brightness": 92,
+    "cabin_noise": 64.9,
+    "wipers": "выкл",
+    "time_of_day": "сумерки",
+    "tires": "летние"
+   },
+   "label": "мокрый асфальт",
+   "expected": {
+    "logreg-1.0": {
+     "class": "мокрый асфальт",
+     "probabilities": {
+      "грунт": 0.213293,
+      "мокрый асфальт": 0.631427,
+      "снег и лед": 0.013188,
+      "сухой асфальт": 0.142092
+     }
+    },
+    "logreg-1.1-snow5": {
+     "class": "мокрый асфальт",
+     "probabilities": {
+      "грунт": 0.196914,
+      "мокрый асфальт": 0.613019,
+      "снег и лед": 0.035305,
+      "сухой асфальт": 0.154762
+     }
+    }
+   }
+  },
+  {
+   "features": {
+    "speed": 21.8,
+    "vib_front": 0.925,
+    "vib_rear": 0.818,
+    "vib_hf": 0.362,
+    "slip": 6.15,
+    "air_temp": 8.5,
+    "road_temp": 11.4,
+    "humidity": 67,
+    "lidar_intensity": 0.429,
+    "camera_brightness": 3,
+    "cabin_noise": 74.8,
+    "wipers": "выкл",
+    "time_of_day": "ночь",
+    "tires": "летние"
+   },
+   "label": "грунт",
+   "expected": {
+    "logreg-1.0": {
+     "class": "грунт",
+     "probabilities": {
+      "грунт": 0.999892,
+      "мокрый асфальт": 0.000106,
+      "снег и лед": 3e-06,
+      "сухой асфальт": 0.0
+     }
+    },
+    "logreg-1.1-snow5": {
+     "class": "грунт",
+     "probabilities": {
+      "грунт": 0.999914,
+      "мокрый асфальт": 8.1e-05,
+      "снег и лед": 5e-06,
+      "сухой асфальт": 0.0
+     }
+    }
+   }
+  },
+  {
+   "features": {
+    "speed": 30.4,
+    "vib_front": 0.847,
+    "vib_rear": 0.771,
+    "vib_hf": 0.297,
+    "slip": 5.58,
+    "air_temp": 25.5,
+    "road_temp": 29.5,
+    "humidity": 51,
+    "lidar_intensity": 0.489,
+    "camera_brightness": 144,
+    "cabin_noise": 61.2,
+    "wipers": "выкл",
+    "time_of_day": "день",
+    "tires": "летние"
+   },
+   "label": "грунт",
+   "expected": {
+    "logreg-1.0": {
+     "class": "грунт",
+     "probabilities": {
+      "грунт": 0.995367,
+      "мокрый асфальт": 0.000102,
+      "снег и лед": 8e-06,
+      "сухой асфальт": 0.004524
+     }
+    },
+    "logreg-1.1-snow5": {
+     "class": "грунт",
+     "probabilities": {
+      "грунт": 0.997096,
+      "мокрый асфальт": 4.4e-05,
+      "снег и лед": 9e-06,
+      "сухой асфальт": 0.00285
+     }
+    }
+   }
+  },
+  {
+   "features": {
+    "speed": 34,
+    "vib_front": 0.279,
+    "vib_rear": 0.228,
+    "vib_hf": 0.248,
+    "slip": 5.36,
+    "air_temp": 3.9,
+    "road_temp": 4.3,
+    "humidity": 99,
+    "lidar_intensity": 0.473,
+    "camera_brightness": 172,
+    "cabin_noise": 61,
+    "wipers": "выкл",
+    "time_of_day": "день",
+    "tires": "зимние"
+   },
+   "label": "снег и лед",
+   "expected": {
+    "logreg-1.0": {
+     "class": "снег и лед",
+     "probabilities": {
+      "грунт": 0.000284,
+      "мокрый асфальт": 0.417127,
+      "снег и лед": 0.579536,
+      "сухой асфальт": 0.003053
+     }
+    },
+    "logreg-1.1-snow5": {
+     "class": "снег и лед",
+     "probabilities": {
+      "грунт": 7.1e-05,
+      "мокрый асфальт": 0.11151,
+      "снег и лед": 0.88784,
+      "сухой асфальт": 0.000579
+     }
+    }
+   }
+  },
+  {
+   "features": {
+    "speed": 24.4,
+    "vib_front": 0.445,
+    "vib_rear": 0.361,
+    "vib_hf": 0.223,
+    "slip": 6.22,
+    "air_temp": -11,
+    "road_temp": -12.7,
+    "humidity": 71,
+    "lidar_intensity": 0.647,
+    "camera_brightness": 184,
+    "cabin_noise": 59.8,
+    "wipers": "выкл",
+    "time_of_day": "день",
+    "tires": "зимние"
+   },
+   "label": "снег и лед",
+   "expected": {
+    "logreg-1.0": {
+     "class": "снег и лед",
+     "probabilities": {
+      "грунт": 1e-06,
+      "мокрый асфальт": 0.000186,
+      "снег и лед": 0.999811,
+      "сухой асфальт": 2e-06
+     }
+    },
+    "logreg-1.1-snow5": {
+     "class": "снег и лед",
+     "probabilities": {
+      "грунт": 0.0,
+      "мокрый асфальт": 2.1e-05,
+      "снег и лед": 0.999979,
+      "сухой асфальт": 0.0
+     }
+    }
+   }
+  }
+ ]
+}
